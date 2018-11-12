@@ -20,6 +20,7 @@
 		25226458AA3794488B892F92 /* Pods_ReactiveCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactiveCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		870051B0C6457A134F5907D1 /* Pods-ReactiveCocoa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveCocoa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveCocoa/Pods-ReactiveCocoa.debug.xcconfig"; sourceTree = "<group>"; };
 		B1AF8432219694BA00F53BE1 /* Playground1.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Playground1.playground; path = ../Playground1.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		B1B507DF2199B9AF00B50048 /* Playground2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Playground2.playground; path = ../Playground2.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		B1EA828821968F5400F8141C /* ReactiveCocoa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveCocoa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1EA828B21968F5400F8141C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1EA828D21968F5400F8141C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +54,7 @@
 		B1EA827F21968F5400F8141C = {
 			isa = PBXGroup;
 			children = (
+				B1B507DF2199B9AF00B50048 /* Playground2.playground */,
 				B1AF8432219694BA00F53BE1 /* Playground1.playground */,
 				B1EA828A21968F5400F8141C /* ReactiveCocoa */,
 				B1EA828921968F5400F8141C /* Products */,
@@ -361,6 +363,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.learning.reactive;
+				PRODUCT_MODULE_NAME = Reactive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -379,6 +382,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.learning.reactive;
+				PRODUCT_MODULE_NAME = Reactive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
