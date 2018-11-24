@@ -21,17 +21,55 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.loginButton.isEnabled = false
-        configureUI()
+        //configureUI()
+        setupUI()
     }
-
-    func configureUI() {
     
-        username.reactive.continuousTextValues.observeValues { [weak self] value in
-            
-            guard let username = value else {return}
-            //print(username)
+    func setupUI() {
+        
+        let userNameSignal = username.reactive.continuousTextValues.map { (name) -> Bool in
+            return self.userNameValid(name: name)
         }
         
+        userNameSignal.map { (valid) -> CGColor in
+            return valid ? UIColor.green.cgColor : UIColor.red.cgColor
+        }
+        .skip(first: 1) // the number of times the subscriber should ignore the signal
+        .observeValues { (color) -> Void in
+            self.username.layer.borderWidth = 1.0
+            self.username.layer.borderColor = color
+        }
+        
+        let passwordSignal = password.reactive.continuousTextValues.map { (name) -> Bool in
+            return self.passwordValid(name: name)
+        }
+        
+        passwordSignal.map { (valid) -> CGColor in
+            return valid ? UIColor.green.cgColor : UIColor.red.cgColor
+        }
+        .skip(first: 1)
+        .observeValues { (color) -> Void in
+            self.password.layer.borderWidth = 1.0
+            self.password.layer.borderColor = color
+        }
+        
+        Signal.combineLatest([userNameSignal,passwordSignal])
+            .observeValues { (values) in
+            
+            self.loginButton.isEnabled = values[0] && values[1]
+        }
+    }
+    
+    func userNameValid(name : String?) -> Bool {
+        return name != nil && name!.count > 2
+    }
+
+    func passwordValid(name : String?) -> Bool {
+        return name != nil && name!.count > 2
+    }
+    
+    func configureUI() {
+    
         username
             .reactive
             .continuousTextValues
@@ -49,6 +87,9 @@ class ViewController: UIViewController {
             .controlEvents(UIControl.Event.touchUpInside)
             .observeValues { button in
                 print("tapped")
+                
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "ListViewController")
+                self.navigationController?.pushViewController(vc!, animated: true)
             }
     }
 

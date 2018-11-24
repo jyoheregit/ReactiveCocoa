@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B134D8A721A925F90086EB22 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B134D8A621A925F90086EB22 /* ListViewController.swift */; };
+		B134D8A921A928170086EB22 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B134D8A821A928170086EB22 /* ViewModel.swift */; };
 		B1EA828C21968F5400F8141C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EA828B21968F5400F8141C /* AppDelegate.swift */; };
 		B1EA828E21968F5400F8141C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EA828D21968F5400F8141C /* ViewController.swift */; };
 		B1EA829121968F5400F8141C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1EA828F21968F5400F8141C /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 		22DD414E2D84A0573BDB949B /* Pods-ReactiveCocoa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveCocoa.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveCocoa/Pods-ReactiveCocoa.release.xcconfig"; sourceTree = "<group>"; };
 		25226458AA3794488B892F92 /* Pods_ReactiveCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactiveCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		870051B0C6457A134F5907D1 /* Pods-ReactiveCocoa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveCocoa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveCocoa/Pods-ReactiveCocoa.debug.xcconfig"; sourceTree = "<group>"; };
+		B134D8A621A925F90086EB22 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		B134D8A821A928170086EB22 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		B1AF8432219694BA00F53BE1 /* Playground1.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Playground1.playground; path = ../Playground1.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		B1B507DF2199B9AF00B50048 /* Playground2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Playground2.playground; path = ../Playground2.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		B1EA828821968F5400F8141C /* ReactiveCocoa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveCocoa.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +84,8 @@
 				B1EA829221968F5500F8141C /* Assets.xcassets */,
 				B1EA829421968F5500F8141C /* LaunchScreen.storyboard */,
 				B1EA829721968F5500F8141C /* Info.plist */,
+				B134D8A621A925F90086EB22 /* ListViewController.swift */,
+				B134D8A821A928170086EB22 /* ViewModel.swift */,
 			);
 			path = ReactiveCocoa;
 			sourceTree = "<group>";
@@ -210,6 +216,8 @@
 			files = (
 				B1EA828E21968F5400F8141C /* ViewController.swift in Sources */,
 				B1EA828C21968F5400F8141C /* AppDelegate.swift in Sources */,
+				B134D8A921A928170086EB22 /* ViewModel.swift in Sources */,
+				B134D8A721A925F90086EB22 /* ListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
