@@ -32,6 +32,8 @@
 		B1EA829221968F5500F8141C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1EA829521968F5500F8141C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B1EA829721968F5500F8141C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1EF54AA21EA9ECB0041FC48 /* Playground3.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Playground3.playground; path = ../Playground3.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		B1EF54AB21EC6D2B0041FC48 /* Playground4.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Playground4.playground; path = ../Playground4.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,8 @@
 		B1EA827F21968F5400F8141C = {
 			isa = PBXGroup;
 			children = (
+				B1EF54AB21EC6D2B0041FC48 /* Playground4.playground */,
+				B1EF54AA21EA9ECB0041FC48 /* Playground3.playground */,
 				B1B507DF2199B9AF00B50048 /* Playground2.playground */,
 				B1AF8432219694BA00F53BE1 /* Playground1.playground */,
 				B1EA828A21968F5400F8141C /* ReactiveCocoa */,
